@@ -37,7 +37,7 @@
         background-color: rgb(210, 210, 210);
         margin: auto;
       }
-      #intro {
+      .intro {
         width:50%;
         margin: auto;
         border: 2px groove black;
@@ -82,6 +82,25 @@
         text-decoration: none;
       }
       
+      .ExtraBox {
+        position:absolute;
+        left:0px;
+      }
+      
+      
+      .intro:hover .ExtraBox {
+        display: block;
+        background-color: rgb(200,200,200);
+        float:left;
+        width:20%;
+        border: 2px groove black;
+        background-color: rgb(252, 208, 94);
+        text-align: center;
+        box-shadow: -6px 6px 3px;
+      }
+      
+      
+      
     </style>
     
   </head>
@@ -89,8 +108,14 @@
   <body>
     <!-- This is a Comment the begining of the WebPage -->
     
+    
       <h1 class="Bold"> Welcome to Weazel's Practice Web Site</h1>
-      <div id="intro">
+      
+      
+      <div class="intro">
+        <div class="ExtraBox">
+      <p>This Box Appears when you hover over the intro box, now hold the mouse button down</p>
+    </div>
       <h2><em>What the heck is this place?</em></h2>
       <p><strong>Good Question!</strong><br>This is a web site that Weazel is using to learn html5 and css3</p>
       <h3 class="Bold">Oh... it looks awful, you're pretty bad</h2>
