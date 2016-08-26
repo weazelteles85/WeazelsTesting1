@@ -83,10 +83,15 @@
       }
       
       .ExtraBox {
+        display: none;
         position:absolute;
         left:0px;
+        font-size: 14px;
       }
       
+      .ExtraBox p {
+        display:none;
+      }
       
       .intro:hover .ExtraBox {
         display: block;
@@ -97,6 +102,10 @@
         background-color: rgb(252, 208, 94);
         text-align: center;
         box-shadow: -6px 6px 3px;
+      }
+      
+      .intro:active .ExtraBox p{
+        display:block;
       }
       
       
@@ -114,7 +123,8 @@
       
       <div class="intro">
         <div class="ExtraBox">
-      <p>This Box Appears when you hover over the intro box, now hold the mouse button down</p>
+      <h3>This Box Appears when you hover over the intro box, now hold the mouse button down</h3>
+      <p>Now this writing appears while holding the mouse button down</p>
     </div>
       <h2><em>What the heck is this place?</em></h2>
       <p><strong>Good Question!</strong><br>This is a web site that Weazel is using to learn html5 and css3</p>
